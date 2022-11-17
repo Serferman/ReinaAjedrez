@@ -45,4 +45,11 @@ public class MainApp {
 		}
 	}
 	
+	private static Reina mostrarReina() {
+		if (reina == null) {
+			System.out.println("El objeto Reina no se ha creado, crea una reina.");
+		}
+
+		return reina;
+	}
 }
