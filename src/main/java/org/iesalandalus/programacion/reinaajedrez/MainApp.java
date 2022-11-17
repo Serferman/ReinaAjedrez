@@ -26,4 +26,8 @@ public class MainApp {
 		}
 	}
 	
+	private static void crearReinaDefecto() {
+		reina = new Reina();
+	}
+	
 }
