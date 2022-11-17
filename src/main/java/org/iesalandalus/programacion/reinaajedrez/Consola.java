@@ -116,4 +116,8 @@ public class Consola {
 		return opcion;
 	}
 	
+	public static void despedirse() {
+		System.out.println("Hasta la proxima chavales");
+	}
+	
 }
