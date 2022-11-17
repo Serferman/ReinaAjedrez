@@ -106,5 +106,14 @@ public class Consola {
 		}
 		return direccion;
 	}
+
+	public static int elegirPasos() {
+		int opcion;
+		
+		System.out.println("¿Cuantos pasos quieres dar?");
+		opcion = Entrada.entero();
+		
+		return opcion;
+	}
 	
 }
