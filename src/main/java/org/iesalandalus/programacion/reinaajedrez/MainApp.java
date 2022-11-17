@@ -30,4 +30,7 @@ public class MainApp {
 		reina = new Reina();
 	}
 	
+	private static void crearReinaColor() {
+		reina = new Reina(Consola.elegirColor());
+	}
 }
