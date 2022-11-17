@@ -47,5 +47,17 @@ public class Consola {
 		return color;
 	}
 
+	public static void mostrarMenuDirecciones() {
+		System.out.println("------------");
+		System.out.println("1.- NORTE");
+		System.out.println("2.- SUR");
+		System.out.println("3.- ESTE");
+		System.out.println("4.- OESTE");
+		System.out.println("5.- NORESTE");
+		System.out.println("6.- NOROESTE");
+		System.out.println("7.- SURESTE");
+		System.out.println("8.- SUROESTE");
+		System.out.println("------------");
+	}
 	
 }
