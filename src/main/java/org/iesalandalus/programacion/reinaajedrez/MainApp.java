@@ -9,21 +9,39 @@ public class MainApp {
 	private static Reina reina;
 	
 	public static void main(String[] args) {
-		
+		int aux;
+
+		Consola.mostrarMenu();
+		do {
+			aux = Consola.elegirOpcionMenu();
+			ejecutarOpcion(aux);
+		} while (aux != 4);
+
 	}
-	
+
 	private static void ejecutarOpcion(int opcion) {
 		switch (opcion) {
 		case 1:
+			crearReinaDefecto();
+			System.out.println(mostrarReina());
+			System.out.println("-------------------------------------");
 			break;
 
 		case 2:
+			crearReinaColor();
+			System.out.println(mostrarReina());
+			System.out.println("-------------------------------------");
 			break;
 
 		case 3:
+			mover();
+			System.out.println(mostrarReina());
+			System.out.println("-------------------------------------");
 			break;
 
 		case 4:
+			Consola.despedirse();
+			System.out.println("-------------------------------------");
 			break;
 		}
 	}
