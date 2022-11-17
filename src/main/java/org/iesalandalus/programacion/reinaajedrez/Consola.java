@@ -34,8 +34,8 @@ public class Consola {
 		int opcion;
 		do {
 			System.out.println("Escoje un color: ");
-			System.out.println("1.- blanco");
-			System.out.println("2.- negro");
+			System.out.println("1.- Blanco");
+			System.out.println("2.- Negro");
 			opcion = Entrada.entero();
 		} while ((opcion < 1) || (opcion > 2));
 
@@ -66,7 +66,7 @@ public class Consola {
 		int opcion;
 
 		do {
-			System.out.println("Elige una direccion: ");
+			System.out.println("Elige una dirección: ");
 			opcion = Entrada.entero();
 		} while ((opcion < 1) || (8 < opcion));
 
@@ -117,7 +117,7 @@ public class Consola {
 	}
 	
 	public static void despedirse() {
-		System.out.println("Hasta la proxima chavales");
+		System.out.println("Hasta la próxima chavales");
 	}
 	
 }

@@ -58,14 +58,14 @@ public class MainApp {
 		try {
 			Consola.mostrarMenuDirecciones();
 			reina.mover(Consola.elegirDireccion(), Consola.elegirPasos());
-		} catch (OperationNotSupportedException e) {
+		} catch (OperationNotSupportedException | IllegalArgumentException e) {
 			System.out.println(e.getMessage());
 		}
 	}
 	
 	private static Reina mostrarReina() {
 		if (reina == null) {
-			System.out.println("El objeto Reina no se ha creado, crea una reina.");
+			System.out.println("El objeto Reina es nulo, crea una reina.");
 		}
 
 		return reina;
