@@ -10,6 +10,10 @@ public class Reina {
 		setPosicion(new Posicion(1, 'd'));
 	}
 	
+	public Reina(Color color) {
+		setColor(color);
+	}
+	
 	public Color getColor() {
 		return color;
 	}
