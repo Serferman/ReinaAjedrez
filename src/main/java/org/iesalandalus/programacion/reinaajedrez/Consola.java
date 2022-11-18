@@ -23,7 +23,7 @@ public class Consola {
 	public static int elegirOpcionMenu() {
 		int opcion;
 		do {
-			System.out.println("Introduceme una opción de este menú: ");
+			System.out.print("Introduceme una opción de este menú: ");
 			opcion = Entrada.entero();
 		} while ((opcion < 1) || (opcion > 4));
 		return opcion;
@@ -66,7 +66,7 @@ public class Consola {
 		int opcion;
 
 		do {
-			System.out.println("Elige una dirección: ");
+			System.out.print("Elige una dirección: ");
 			opcion = Entrada.entero();
 		} while ((opcion < 1) || (8 < opcion));
 
@@ -110,7 +110,7 @@ public class Consola {
 	public static int elegirPasos() {
 		int opcion;
 		
-		System.out.println("¿Cuantos pasos quieres dar?");
+		System.out.print("¿Cuantos pasos quieres dar?");
 		opcion = Entrada.entero();
 		
 		return opcion;
